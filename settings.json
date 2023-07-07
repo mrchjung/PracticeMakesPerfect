@@ -1,0 +1,48 @@
+{
+    // File //
+    // *Auto Save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+    }, //자동정렬
+    //* Tab Indent//
+    "workbench.tree.Indent": 4,
+    //*Minimap//
+    "editor.minimap.enabled": false,
+    //* 맨 윗줄 정보 고정
+    "editor.stickyScroll.enabled": true,
+    //* Formatting//
+    "editor.formatOnSave": true,
+    //* Grouping//
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    //* Grouping pattern
+    "explorer.fileNesting.patterns": {
+        "pubspec.yaml": ".packages, .metadata, pubspec.lock, analysis_options.yaml",
+        "*.dart": "$(capture).g.dart, $(capture).freezed.dart", //build 파일과 freezed 파일을 묶어줌.
+    },
+    //dart recommended settings. (https://dartcode.org/docs/recommended-settings)
+    // Causes the debug view to automatically appear when a breakpoint is hit. This
+    // setting is global and not configurable per-language.
+    "debug.openDebug": "openOnDebugBreak",
+    // By default, VS Code will only switch to the Debug Console when you start
+    // debugging the first time in a session. This setting tells VS Code to always
+    // switch to the Debug Console when starting a session, so you can see the
+    // programs output.
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "workbench.editorAssociations": {
+        "*.kmz": "default"
+    },
+}
